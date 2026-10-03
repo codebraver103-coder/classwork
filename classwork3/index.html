@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="test" style="width:200px;height:200px;border:solid;background-color:gray;">
+        <p>Onmousemove</p>
+        <p1 id="mouse1">Mouse over here!</p1>
+    </div>
+    <div id="test2" style="width:200px;height:200px;border:solid;background-color:gray">
+        <p>Onmouseenter</p>
+        <p1 id="mouse2">Mouse over here!</p1>
+    </div>
+    <div id="test3" style="width:200px;height:200px;border:solid;background-color:gray;">
+        <p>Onmouseover</p>
+        <p1 id="mouse3">Mouse over here!</p1>
+    </div>
+    <script>
+        x=0
+        y=0
+        z=0
+        document.getElementById('test').addEventListener('mousemove',function(){
+            document.getElementById('mouse1').innerHTML=x+=1
+        })
+        document.getElementById('test2').addEventListener('mouseenter',function(){
+            document.getElementById('mouse2').innerHTML=y+=1
+        })
+        document.getElementById('test3').addEventListener('mouseover',function(){
+            document.getElementById('mouse3').innerHTML=z+=1
+        })
+    </script>
+</body>
+</html>
